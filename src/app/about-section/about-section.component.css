@@ -1,0 +1,29 @@
+@media only screen and (max-width: 768px){
+    .centerMargin {
+        margin: 15px !important;   
+    }
+    .picAdjustment {
+        padding-left: 70px !important;
+    }
+    .pic {
+        width: 200px;
+        align-items: center;
+        border-radius: 20px;
+        border: 3px solid rgb(212, 98, 17) !important;
+    }
+}
+.centerMargin {
+    margin: 83px;   
+}
+.pic {
+    width: 175px;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px solid rgb(212, 98, 17) !important;
+}
+.about {
+    line-height: 2.2;
+}
+.picAdjustment {
+    padding-left: 100px;
+}

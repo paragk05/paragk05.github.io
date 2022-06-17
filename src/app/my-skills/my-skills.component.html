@@ -1,0 +1,30 @@
+<div class="centerMargin" id="my-skills">
+    <div *ngIf="visibleSkills">
+        <div class="row">
+            <div class="col mt-5">
+                <h2>My Key Skills</h2>
+            </div>
+        </div>
+        <div class="row pt-5 mx-auto" [@listAnimation]="list.length">
+            <div *ngFor="let obj of list;let i =index;" class="col-md-4">
+                <div class="card mt-4 rotateCard" *ngIf="i != list.length - 1">
+                    <div class="link">
+                        <div class="card-body"> 
+                            <span class="cardText">{{obj.skill}} <img [src]="obj.link" width="18px"> </span>
+                            <span class="addText">
+                                <label *ngFor="let rate of counter(obj.rating)">
+                                    <span class="icon">★</span>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div *ngIf="i === list.length - 1 && !hideBtn" class="card loadMoreCard mt-4 rotateCard" (click)="loadMore()">
+                    <div class="card-body mx-auto">
+                        <span class="cardText">+ Load More</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
